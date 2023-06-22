@@ -96,8 +96,8 @@ $ npm run dev
 $ email: admin@email.com
 $ password: 123456
 
-# Client login
-$ email: cliente@email.com
+# User login
+$ email: user@gmail.com
 $ password: 123456
 
 # The Server will start at port: 3333 - go to http://localhost:3333
