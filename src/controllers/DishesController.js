@@ -11,7 +11,7 @@ class DishesController {
 
     const filename = await diskStorage.saveFile(imageFilename);
 
-    const dish_id = await knex("dishes").insert({
+    const [dish_id] = await knex("dishes").insert({
       image: filename,
       title,
       description,
@@ -40,9 +40,7 @@ class DishesController {
 
     await knex("ingredients").insert(ingredientsInsert);
 
-    return response.status(201).json({
-      title, description, category, price, ingredients
-    });
+    return response.status(201).json();
   }
 
   async update(request, response) {
