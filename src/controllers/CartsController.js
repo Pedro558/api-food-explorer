@@ -5,7 +5,7 @@ class CartsController {
     const { status, paymentMethod, orders } = request.body;
     const user_id = request.user.id;
 
-    const cart_id = await knex("carts").insert({
+    const [cart_id] = await knex("carts").insert({
       status,
       paymentMethod,
       user_id
