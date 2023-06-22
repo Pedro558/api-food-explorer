@@ -10,7 +10,7 @@
     "seed": "knex seed:run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pedro Afonso",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
