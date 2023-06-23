@@ -4,10 +4,12 @@
 
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=license&message=ISC&color=8022F5&style=flat">
-  <img src="https://img.shields.io/badge/-NodeJS-339933?logo=node.js&logoColor=white&style=flat">
-  <img src="https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white&style=flat">
-  <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=flat">
-  <a href="https://www.linkedin.com/in/pedro-afonso-lkdn/"><img src="https://img.shields.io/static/v1?label=made%20by&message=Pedro&color=4B00A8&style=flat"></a>
+  <img src="https://img.shields.io/static/v1?label=license&message=ISC&color=8022F5&style=flat">
+  <br/>
+  <img src="https://img.shields.io/badge/-NodeJS-339933?logo=node.js&logoColor=white&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white&style=for-the-badge">
+  <img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge">
+  
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
