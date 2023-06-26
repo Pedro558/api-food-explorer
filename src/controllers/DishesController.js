@@ -19,23 +19,21 @@ class DishesController {
       price,
     });
 
-    const ingredientsArray = ingredients.split(",");
     let ingredientsInsert;
+    const singleIngredient = typeof(ingredients) === "string";
 
-    if (ingredientsArray.length == 1) {
+    if (singleIngredient) {
       ingredientsInsert = {
         name: ingredients,
         dish_id,
-      };
-    } else if (ingredientsArray.length > 1) {
-      ingredientsInsert = ingredientsArray.map((ingredient) => {
+      }
+    } else if (ingredients.length > 1) {
+      ingredientsInsert = ingredients.map((ingredient) => {
         return {
           name: ingredient,
           dish_id,
         };
       });
-    } else {
-      return;
     }
 
     await knex("ingredients").insert(ingredientsInsert);
@@ -75,15 +73,14 @@ class DishesController {
     await knex("dishes").where({ id }).update(dish);
     await knex("dishes").where({ id }).update("updated_at", knex.fn.now());
 
-    const ingredientsArray = ingredients?.split(",");
     let ingredientsInsert;
 
-    if (ingredientsArray?.length == 1) {
+    if (ingredients.length == 1) {
       ingredientsInsert = {
         dish_id: dish.id,
         name: ingredients,
       };
-    } else if (ingredientsArray?.length > 1) {
+    } else if (ingredients.length > 1) {
       ingredientsInsert = ingredients.map((ingredient) => {
         return {
           dish_id: dish.id,
