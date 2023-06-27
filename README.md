@@ -24,8 +24,8 @@ This project was built with the techs described in Tools section.
 
 The project it's the final challenge of Rocketseat Explorer's course. 
 
-Watch it in action Deploy Front: [Click Here](#)  
-Watch it in action Deploy Backend: [Click Here](#) 
+Watch it in action Deploy Front: [Click Here](https://food-explorer-application.netlify.app/)  
+Watch it in action Deploy Backend: [Click Here](https://api-food-explorer-t2r6.onrender.com) 
 
 Login User: user@gmail.com  
 Password: 123456
@@ -95,7 +95,7 @@ $ npm seed
 $ npm run dev
 
 # Admin login
-$ email: admin@email.com
+$ email: pedro@gmail.com
 $ password: 123456
 
 # User login
