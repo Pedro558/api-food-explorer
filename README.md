@@ -13,7 +13,7 @@
 </p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="foodexplorer" title="#foodexplorer" src="https://imgur.com/XR5aAEA.jpg" width="100%">
+  <img alt="foodexplorer" title="#foodexplorer" src="https://i.imgur.com/2NQ9gg8.jpg" width="100%">
 </p>
 
 ## 📖 About <a name='about'></a>
