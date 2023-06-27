@@ -74,8 +74,9 @@ class DishesController {
     await knex("dishes").where({ id }).update("updated_at", knex.fn.now());
 
     let ingredientsInsert;
+    const singleIngredient = typeof(ingredients) === "string";
 
-    if (ingredients.length == 1) {
+    if (singleIngredient) {
       ingredientsInsert = {
         dish_id: dish.id,
         name: ingredients,
